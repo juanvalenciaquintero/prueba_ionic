@@ -24,8 +24,10 @@
     </ion-card-content>
   </ion-card>
 
-	{{mensaje}}
-  <ion-list lines="none">
+	<ion-content *ngFor="let encontrado of mensaje">
+			<ion-card-title>{{encontrado.id}} - {{encontrado.fecha}}</ion-card-title>
+  </ion-content>
+  <!-- <ion-list lines="none">
     <ion-list-header>
       <ion-label>Resources</ion-label>
     </ion-list-header>
@@ -46,4 +48,4 @@
       <ion-label>Theme Your App</ion-label>
     </ion-item>
   </ion-list>
-</ion-content>
+</ion-content> -->
